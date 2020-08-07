@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="railway.java.MainController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="41.0" prefHeight="380.0" prefWidth="508.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="tablesChoiceBox" layoutX="536.0" layoutY="41.0" prefWidth="150.0" />
+      <Label layoutX="536.0" layoutY="20.0" text="Таблицы" textFill="#fafafa">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font></Label>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Редактирование">
+            <items>
+              <MenuItem fx:id="modifyMenu" mnemonicParsing="false" text="Правка" />
+                  <MenuItem fx:id="addMenu" mnemonicParsing="false" text="Добавление" />
+                  <MenuItem fx:id="deleteMenu" mnemonicParsing="false" text="Удаление" />
+            </items>
+          </Menu>
+            <Menu fx:id="showFlightMenu" mnemonicParsing="false" text="Просмотр Рейсов" />
+            <Menu fx:id="showTicketsMenu" mnemonicParsing="false" text="Просмотр Билетов" />
+          <Menu fx:id="printMenu" mnemonicParsing="false" text="Печать" />
+          <Menu fx:id="exitMenu" mnemonicParsing="false" text="Выход" />
+        </menus>
+      </MenuBar>
+      <Label fx:id="testLabel" layoutX="562.0" layoutY="286.0" text="Label" textFill="#fcfcfc" />
+   </children>
+</AnchorPane>

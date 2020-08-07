@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="railway.java.MainController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="41.0" prefHeight="380.0" prefWidth="508.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="tablesChoiceBox" layoutX="536.0" layoutY="41.0" prefWidth="150.0" />
+      <Label layoutX="536.0" layoutY="20.0" text="Таблицы" textFill="#fafafa">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font></Label>
+      <MenuBar fx:id="menuBar" layoutY="2.0" style="-fx-background-color: #fafafa;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Редактирование">
+            <items>
+              <MenuItem fx:id="modifyMenu" mnemonicParsing="false" text="Правка" />
+                  <MenuItem fx:id="addMenu" mnemonicParsing="false" text="Добавление" />
+                  <MenuItem fx:id="deleteMenu" mnemonicParsing="false" text="Удаление" />
+            </items>
+          </Menu>
+            <Menu fx:id="flightMenu" mnemonicParsing="false" text="Работникам">
+               <items>
+                  <MenuItem fx:id="showFlightMenu" mnemonicParsing="false" text="Просмотр Рейсов" />
+                  <MenuItem fx:id="flightScheduleMenu" mnemonicParsing="false" text="Расписание Рейсов" />
+                  <MenuItem fx:id="ticketForm" mnemonicParsing="false" text="Работа с билетами" />
+                  <MenuItem fx:id="routeForm" mnemonicParsing="false" text="Информация по маршрутам" />
+                  <MenuItem fx:id="typeForm" mnemonicParsing="false" text="Информация по типам вагонов" />
+               </items></Menu>
+            <Menu fx:id="showTicketsMenu" mnemonicParsing="false" text="Билеты">
+               <items>
+                  <MenuItem fx:id="buyTicketMenu" mnemonicParsing="false" text="Купить билет" />
+                  <MenuItem fx:id="showTicketMenu" mnemonicParsing="false" text="Просмотреть билеты" />
+               </items></Menu>
+          <Menu fx:id="printMenu" mnemonicParsing="false" />
+          <Menu fx:id="exitMenu" mnemonicParsing="false">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" visible="false" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="backLoginButton" layoutX="14.0" layoutY="454.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="150.0" style="-fx-background-color: #fafafa;" text="Выйти из аккаунта" textFill="#2e3348">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="432.0" prefWidth="607.0" style="-fx-background-color: #2e3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="railway.java.FlightDatesController">
+   <children>
+      <TableView fx:id="tableView1" layoutX="113.0" layoutY="41.0" prefHeight="171.0" prefWidth="480.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableView2" layoutX="113.0" layoutY="245.0" prefHeight="171.0" prefWidth="480.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Label layoutX="273.0" layoutY="15.0" text="Прошедшие Рейсы" textFill="#fafafa">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="288.0" layoutY="224.0" text="Будущие Рейсы" textFill="#fafafa">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentDateLabel" layoutX="14.0" layoutY="5.0" text="01-01-2000" textFill="#fafafa">
+         <font>
+            <Font name="Georgia" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="373.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="87.0" style="-fx-background-color: #fafafa;" text="Назад" textFill="#2e3348">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

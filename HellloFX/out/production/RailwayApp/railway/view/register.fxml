@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="457.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="railway.java.RegisterController">
+    <children>
+        <TextField fx:id="loginField" layoutX="14.0" layoutY="141.0" prefHeight="25.0" prefWidth="169.0" promptText="Логин" />
+      <PasswordField fx:id="password1Field" layoutX="14.0" layoutY="176.0" prefHeight="25.0" prefWidth="169.0" promptText="Пароль" />
+        <PasswordField fx:id="password2Field" layoutX="14.0" layoutY="208.0" prefHeight="25.0" prefWidth="169.0" promptText="Подтверждение пароля" />
+      <TextField fx:id="fioTextField" layoutX="294.0" layoutY="141.0" promptText="Иванов И.И." />
+      <ChoiceBox id="choiceBox1" fx:id="choiceBox1" layoutX="294.0" layoutY="176.0" prefWidth="150.0" />
+        <Button fx:id="registerButton" layoutX="274.0" layoutY="255.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="169.0" style="-fx-background-color: #fafafa;" text="Зарегистрироваться" textFill="#2e3348">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="260.0" mnemonicParsing="false" style="-fx-background-color: #fafafa;" text="Назад" textFill="#2e3348">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="260.0" layoutY="146.0" text="ФИО" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="12.0" />
+         </font>
+      </Label>
+        <Label layoutX="51.0" layoutY="14.0" text="Железнодорожный Вокзал" textFill="WHITE">
+            <font>
+                <Font name="Georgia" size="28.0" />
+            </font>
+        </Label>
+        <Label layoutX="155.0" layoutY="57.0" text="Регистрация" textFill="#fafafa">
+            <font>
+                <Font name="Georgia" size="24.0" />
+            </font>
+        </Label>
+      <Label fx:id="errorLabel" layoutX="14.0" layoutY="113.0" text="Данный логин уже существует!" textFill="RED" />
+      <Label fx:id="fioErrorLabel" layoutX="149.0" layoutY="113.0" prefHeight="17.0" prefWidth="297.0" text="ФИО должно иметь вид &quot;Иванов И.И.&quot; или &quot;W. Smith&quot;" textFill="RED" />
+    </children>
+</AnchorPane>
